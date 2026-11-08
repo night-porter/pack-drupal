@@ -1,0 +1,9 @@
+# DDEV stack per worktree. Paste into a repo file, e.g. repos/github/you/site.toml.
+# DDEV needs the Docker socket, so also set in that repo file:
+#   sandbox = false
+#   allow_commands = ["ddev exec", "ddev drush", "ddev phpunit", "ddev composer"]
+# Use --project-type=drupal10 for Drupal 10 sites.
+[env]
+setup = ["ddev config --project-type=drupal11 --project-name=np-{repo}-{n} --auto", "ddev start", "ddev composer install"]
+teardown = ["ddev stop"]
+cleanup = ["ddev delete -O -y"]

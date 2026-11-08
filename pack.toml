@@ -1,0 +1,22 @@
+name = "drupal"
+description = "Drupal coding standards, config export, update hooks and cache metadata, plus a DDEV env preset"
+version = "0.1.0"
+
+[[steps]]
+name = "standards"
+hook = "pre_fix"
+prompt = "steps/standards.md"
+
+[[steps]]
+name = "lint"
+hook = "post_fix"
+prompt = "steps/lint.md"
+
+[[steps]]
+name = "review"
+hook = "pre_push"
+prompt = "steps/review.md"
+
+[[envs]]
+name = "ddev"
+file = "envs/ddev.toml"
