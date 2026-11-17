@@ -1,6 +1,6 @@
 name = "drupal"
 description = "Drupal coding standards, config export, update hooks and cache metadata, plus a DDEV env preset"
-version = "0.1.0"
+version = "0.1.1"
 
 [[steps]]
 name = "standards"

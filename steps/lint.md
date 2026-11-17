@@ -10,4 +10,4 @@ vendor/bin/phpstan ...`), otherwise run them directly:
 
 Fix problems on lines you changed. Don't reformat untouched code, and don't add baseline or
 ignore entries to make a check pass. If a tool isn't installed or you aren't allowed to run it,
-say so in your summary instead of guessing.
+write "Not verified locally." for it, without the reason, and don't guess at its result.
